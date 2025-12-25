@@ -31,16 +31,16 @@ const Navbar = () => {
             <a href="#skills" className="cursor-pointer">
               Technologies
             </a>
-            <a href="#projects" className="cursor-pointer">
+            <a href="#about" className="cursor-pointer">
               About
             </a>
             <a href="#projects" className="cursor-pointer">
               Services
             </a>
-            <a href="#projects" className="cursor-pointer">
+            <a href="#trainers" className="cursor-pointer">
               Trainers
             </a>
-            <a href="#projects" className="cursor-pointer">
+            <a href="#contact" className="cursor-pointer">
               Contact
             </a>
           </div>
