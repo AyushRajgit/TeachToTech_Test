@@ -3,7 +3,7 @@ import Hero from "@/components/main/Hero";
 import Projects from "@/components/main/Projects";
 import Skills from "@/components/main/Skills";
 import About from "@/components/main/About";
-import Trainer from "@/components/main/Trainer";
+import Trainers from "@/components/main/Trainers";
 import Contact from "@/components/main/Contact";
 import Image from "next/image";
 
@@ -16,7 +16,7 @@ export default function Home() {
         <Encryption />
         <About />
         <Projects />
-        <Trainer />
+        <Trainers />
         <Contact />
       </div>
     </main>
