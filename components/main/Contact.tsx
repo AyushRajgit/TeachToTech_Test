@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 
 export default function Contact() {
