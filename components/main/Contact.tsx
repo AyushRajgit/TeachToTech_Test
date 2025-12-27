@@ -49,7 +49,7 @@ export default function Contact() {
               Get in Touch
             </h2>
             <p className="text-blue-200 mb-12 text-lg font-light leading-relaxed">
-              Orbiting around an idea? We're ready to help you launch it. Reach out across the cosmos.
+              Orbiting around an idea? We&apos;re ready to help you launch it. Reach out across the cosmos.
             </p>
 
             <div className="space-y-8">

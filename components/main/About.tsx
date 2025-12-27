@@ -33,11 +33,11 @@ export default function About() {
             </h2>
             
             <p className="text-lg text-blue-100/80 mb-6 leading-relaxed">
-              At <span className="text-white font-semibold">TeachToTech</span>, we don't just teach code; we architect the future. We believe technology is the ultimate frontier, and we are the navigators charting the course for the next wave of innovators.
+              At <span className="text-white font-semibold">TeachToTech</span>, we don&apos;t just teach code; we architect the future. We believe technology is the ultimate frontier, and we are the navigators charting the course for the next wave of innovators.
             </p>
             
             <p className="text-lg text-blue-100/80 mb-8 leading-relaxed">
-              From absolute zero to deployment hero, our curriculum is designed to withstand the pressure of real-world challenges. Join us, and let's build a smarter world together.
+              From absolute zero to deployment hero, our curriculum is designed to withstand the pressure of real-world challenges. Join us, and let&apos;s build a smarter world together.
             </p>
 
             {/* Action Buttons */}
