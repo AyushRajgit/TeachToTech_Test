@@ -1,71 +1,87 @@
 import React from "react";
 import {
-  RxDiscordLogo,
-  RxGithubLogo,
   RxInstagramLogo,
   RxTwitterLogo,
   RxLinkedinLogo,
 } from "react-icons/rx";
 
-import { FaYoutube } from "react-icons/fa";
-
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
-        <div className="w-full flex flex-col items-center justify-center m-auto">
-            <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
+    <div className="w-full bg-transparent text-gray-200 shadow-lg p-[15px] relative z-50 border-t border-[#2A0E61] backdrop-blur-md">
+        
+        {/* Container */}
+        <div className="max-w-7xl mx-auto flex flex-col items-center justify-center px-4 py-8">
+            
+            {/* Grid Layout: 3 Columns on Desktop, 1 on Mobile */}
+            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 
+                {/* Column 1: Brand Identity */}
+                <div className="flex flex-col items-center md:items-start text-center md:text-left">
+                    <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-4">
+                        TeachToTech
+                    </h3>
+                    <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+                        Empowering the next generation of developers with cutting-edge skills and hands-on experience.
+                    </p>
+                </div>
 
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Community</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Youtube</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Github</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Discord</span>    
-                    </p>
+                {/* Column 2: Quick Links (About) */}
+                <div className="flex flex-col items-center md:items-start">
+                    <h4 className="font-bold text-[14px] uppercase tracking-widest text-gray-400 mb-6">
+                        Explore
+                    </h4>
+                    <ul className="flex flex-col gap-4 text-sm">
+                        <li>
+                            <a href="#" className="hover:text-cyan-400 transition-colors duration-200">
+                                Become a Sponsor
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about" className="hover:text-cyan-400 transition-colors duration-200">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:xyz123@gmail.com" className="hover:text-cyan-400 transition-colors duration-200">
+                                Contact Support
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Social Media</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Instagram</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Twitter</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Linkedin</span>    
-                    </p>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">About</div>
-                   <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                     
-                        <span className="text-[15px] ml-[6px]">Become Sponsor</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                      
-                        <span className="text-[15px] ml-[6px]">Learning about me</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                  
-                        <span className="text-[15px] ml-[6px]">@gmail.com</span>    
-                    </p>
+
+                {/* Column 3: Connect (Socials) */}
+                <div className="flex flex-col items-center md:items-start">
+                    <h4 className="font-bold text-[14px] uppercase tracking-widest text-gray-400 mb-6">
+                        Connect
+                    </h4>
+                    <div className="flex flex-col gap-4 text-sm">
+                        <a href="#" className="flex items-center gap-2 hover:text-cyan-400 transition-colors duration-200 group">
+                            <RxInstagramLogo className="text-lg group-hover:scale-110 transition-transform" />
+                            <span>Instagram</span>    
+                        </a>
+                        <a href="#" className="flex items-center gap-2 hover:text-cyan-400 transition-colors duration-200 group">
+                            <RxTwitterLogo className="text-lg group-hover:scale-110 transition-transform" />
+                            <span>Twitter</span>    
+                        </a>
+                        <a href="#" className="flex items-center gap-2 hover:text-cyan-400 transition-colors duration-200 group">
+                            <RxLinkedinLogo className="text-lg group-hover:scale-110 transition-transform" />
+                            <span>Linkedin</span>    
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div className="mb-[20px] text-[15px] text-center">
-                &copy; TeachToTech 2026 All rights reserved
+            {/* Bottom Bar: Copyright */}
+            <div className="w-full border-t border-[#2A0E61] pt-6 flex flex-col md:flex-row items-center justify-between text-gray-500 text-sm">
+                <div className="text-center md:text-left mb-2 md:mb-0">
+                    &copy; {new Date().getFullYear()} TeachToTech. All rights reserved.
+                </div>
+                <div className="flex gap-6">
+                    <a href="#" className="hover:text-gray-300 transition-colors">Privacy Policy</a>
+                    <a href="#" className="hover:text-gray-300 transition-colors">Terms of Service</a>
+                </div>
             </div>
+            
         </div>
     </div>
   )
