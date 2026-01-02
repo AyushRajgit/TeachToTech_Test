@@ -12,19 +12,26 @@ const Projects = () => {
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/SpringBoot_Service.jpg"
+          title="Java DSA & Spring Boot"
+          description="Our Spring Boot training enables students to build scalable and secure backend applications using Java.
+The program covers REST APIs, database integration, and modern application architecture.
+Students gain hands-on experience through real-world projects and best coding practices."
         />
         <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/Python_Service.png"
+          title="Python Programming"
+          description="Our Python training builds a strong foundation in programming and problem-solving skills.
+Students learn core Python concepts, object-oriented programming, and practical applications.
+Hands-on exercises and projects enhance real-world coding experience."
         />
         <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/C_Programming.jpg"
+          title="C Programming"
+          description="Our C training focuses on core programming concepts and logical problem-solving.
+Students learn memory management, pointers, and efficient program design.
+The course strengthens fundamentals required for advanced programming languages.
+Ideal for beginners."
         />
       </div>
     </div>

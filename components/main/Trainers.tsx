@@ -14,51 +14,39 @@ const trainerData: Trainer[] = [
   {
     id: 1,
     name: "Ayush Raj",
-    specialty: "Strength & Conditioning",
-    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80", 
+    specialty: "Data Structures & Algorithms (Java)",
+    image: "https://img.freepik.com/premium-photo/young-indian-man-suit-working-laptop-writing-some-note-office_75648-6308.jpg", 
   },
   {
     id: 2,
     name: "Paras Sharma",
-    specialty: "Yoga & Flexibility",
-    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80",
+    specialty: "Data Structures & Algorithms (C/C++)",
+    image: "https://static.vecteezy.com/system/resources/previews/032/168/051/large_2x/entrepreneur-laptop-males-happy-office-happiness-technology-job-young-businessman-men-indian-smile-sitting-photo.jpg",
   },
   {
     id: 3,
     name: "Vipin Soni",
-    specialty: "HIIT Specialist",
-    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80",
+    specialty: "Data Structures & Algorithms (Python)",
+    image: "https://img.freepik.com/free-photo/young-indian-man-using-laptop-white-background_75648-10302.jpg",
   },
   {
     id: 4,
-    name: "Emily Blunt",
-    specialty: "Pilates Instructor",
-    image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&q=80",
+    name: "Varun Kumar",
+    specialty: "Data Structures & Algorithms (C/C++)",
+    image: "https://img.freepik.com/premium-photo/indian-office-laptop-businessman-men_163305-211537.jpg",
   },
   {
     id: 5,
-    name: "Alex Morgan",
-    specialty: "Strength & Conditioning",
-    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80", 
+    name: "Anuj Gupta",
+    specialty: "Java Spring Boot & Web Development",
+    image: "https://t3.ftcdn.net/jpg/05/14/96/62/360_F_514966286_uXqNvMHnKNWcC07IGKsF3nZXlupmrOaP.jpg", 
   },
   {
     id: 6,
-    name: "Sarah Jenkins",
-    specialty: "Yoga & Flexibility",
-    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80",
+    name: "Sushil Kumar",
+    specialty: "Java Spring Boot & Web Development",
+    image: "https://t4.ftcdn.net/jpg/06/33/33/73/360_F_633337344_1WLesoWNnbfLGCXjTySjrtFDbv29cRF1.jpg",
   },
-  {
-    id: 7,
-    name: "Mike Ross",
-    specialty: "HIIT Specialist",
-    image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&q=80",
-  },
-  {
-    id: 8,
-    name: "Emily Blunt",
-    specialty: "Pilates Instructor",
-    image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&q=80",
-  }
 ];
 
 const Trainers: React.FC = () => {
