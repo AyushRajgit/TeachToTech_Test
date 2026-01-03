@@ -7,11 +7,13 @@ import { SparklesIcon } from '@heroicons/react/24/solid'
 const SkillText = () => {
   return (
     <div className='w-full h-auto flex flex-col items-center justify-center'>
-<motion.div
+        <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
+          // CHANGED: Border from purple to Green (#00ff9d with opacity)
+          className="Welcome-box py-[8px] px-[7px] border border-[#00ff9d8b] opacity-[0.9]"
         >
-          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
+          {/* CHANGED: Icon color to bright Green */}
+          <SparklesIcon className="text-[#00ff9d] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
             Think better with us!
           </h1>

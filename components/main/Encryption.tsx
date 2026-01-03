@@ -13,8 +13,9 @@ const Encryption = () => {
           variants={slideInFromTop}
           className="text-[40px] font-medium text-center text-gray-200"
         >
-          Outcome Driven 
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+          Outcome Driven
+          {/* CHANGED: Glossy Gradient - Uses 'via-green-200' for a bright highlight middle */}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-green-200 to-green-500 drop-shadow-[0_0_10px_rgba(0,255,157,0.5)]">
             {" "}
             &{" "}
           </span>
@@ -40,8 +41,16 @@ const Encryption = () => {
           />
         </div>
 
-        <div className="Welcome-box px-[15px] py-[4px] z-[20] brder my-[20px] border-[#7042f88b] opacity-[0.9]">
-          <h1 className="Welcome-text text-[12px]">Encryption</h1>
+        {/* CHANGED: GLOSSY BOX STYLING
+            1. border-[#00ff9d]: Solid Neon Green border
+            2. bg-[#00ff9d15]: Slight green tint background
+            3. shadow-[... inset ...]: The 'inset' shadow creates the inner reflection (gloss)
+            4. backdrop-blur-sm: Frosted glass effect
+        */}
+        <div className="Welcome-box px-[15px] py-[4px] z-[20] my-[20px] border border-[#00ff9d] bg-[#00ff9d15] shadow-[0_0_20px_#00ff9d50,inset_0_0_12px_#00ff9d40] backdrop-blur-sm rounded-full">
+            <h1 className="text-[12px] font-bold text-[#ccffeb] drop-shadow-[0_0_5px_#00ff9d]">
+                Encryption
+            </h1>
         </div>
       </div>
       <div className="absolute z-[20] bottom-[10px] px-[5px]">
@@ -56,8 +65,9 @@ const Encryption = () => {
           muted
           autoPlay
           playsInline
-          preload="false"
-          className="w-full h-auto"
+          preload="true"
+          className="h-full w-full left-0 z-[1] object-cover"
+          style={{ filter: "hue-rotate(199deg) saturate(3.4) contrast(1.1)" }}
           src="/encryption.webm/"
         />
       </div>

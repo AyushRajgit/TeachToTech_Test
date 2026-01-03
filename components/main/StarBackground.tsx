@@ -17,7 +17,6 @@ const StarBackground = (props: any) => {
     ref.current.rotation.y -= delta/15;
   })
 
-
   return (
     <group rotation={[0,0, Math.PI / 4]}>
         <Points
@@ -29,10 +28,12 @@ const StarBackground = (props: any) => {
         >
             <PointMaterial
                 transparent
-                color="$fff"
+                // CHANGED: Color from white to Neon Green
+                color="#00ff9d" 
                 size={0.002}
                 sizeAttenuation={true}
-                dethWrite={false}
+                // TYPO FIX: dethWrite -> depthWrite
+                depthWrite={false}
             />
         </Points>
     </group>

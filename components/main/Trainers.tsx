@@ -82,16 +82,16 @@ const Trainers: React.FC = () => {
       className="flex flex-col items-center justify-center py-20"
       id="trainers"
     >
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
+      {/* CHANGED: Text Gradient to Green/Emerald */}
+      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600 py-20">
         Our Trainers
       </h1>
     <div className="flex justify-center items-center py-10 bg-transparent">
       {/* Cinema Frame Container 
-        - Creates a dark border
-        - Adds a glow effect (shadow-cyan-500/20) for that futuristic screen look
+        - CHANGED: Shadow color to emerald for green glow
       */}
       <div 
-        className="relative w-[90%] max-w-2xl aspect-video bg-black rounded-2xl border-4 border-gray-900 shadow-2xl shadow-cyan-500/10 overflow-hidden group"
+        className="relative w-[90%] max-w-2xl aspect-video bg-black rounded-2xl border-4 border-gray-900 shadow-2xl shadow-emerald-500/10 overflow-hidden group"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
@@ -116,7 +116,8 @@ const Trainers: React.FC = () => {
               {/* Text Content - Floating at bottom left */}
               <div className="absolute bottom-0 left-0 p-8 w-full text-white">
                 <div className="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                  <span className="inline-block px-3 py-1 mb-2 text-xs font-bold tracking-wider uppercase bg-cyan-600 rounded-sm">
+                  {/* CHANGED: Badge background to Emerald */}
+                  <span className="inline-block px-3 py-1 mb-2 text-xs font-bold tracking-wider uppercase bg-emerald-600 rounded-sm">
                     Trainer
                   </span>
                   <h3 className="text-4xl font-black tracking-tight mb-1 font-sans">
@@ -125,11 +126,6 @@ const Trainers: React.FC = () => {
                   <p className="text-lg text-gray-300 font-light mb-4">
                     {trainer.specialty}
                   </p>
-                  
-                  {/* Action Button */}
-                  {/* <button className="px-6 py-2 bg-white text-black font-bold text-sm uppercase tracking-wide rounded hover:bg-cyan-400 transition-colors">
-                    O
-                  </button> */}
                 </div>
               </div>
             </div>
@@ -142,8 +138,9 @@ const Trainers: React.FC = () => {
             <div
               key={idx}
               onClick={() => setCurrentIndex(idx)}
+              // CHANGED: Active indicator color to Emerald/Bright Green
               className={`h-1 rounded-full transition-all duration-300 cursor-pointer ${
-                currentIndex === idx ? "w-8 bg-cyan-400" : "w-2 bg-white/30 hover:bg-white"
+                currentIndex === idx ? "w-8 bg-emerald-400" : "w-2 bg-white/30 hover:bg-white"
               }`}
             ></div>
           ))}

@@ -78,13 +78,14 @@ const Skills = () => {
       <div className="w-full h-full absolute">
         <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
           <video
-            className="w-full h-auto"
+            className="w-full h-auto h-full w-full left-0 z-[1] object-cover"
             preload="false"
             playsInline
             loop
             muted
             autoPlay
             src="/cards-video.webm"
+            style={{ filter: "hue-rotate(250deg) saturate(0.8)" }}
           />
         </div>
       </div>

@@ -7,7 +7,8 @@ import {
 
 const Footer = () => {
   return (
-    <div className="w-full bg-transparent text-gray-200 shadow-lg p-[15px] relative z-50 border-t border-[#2A0E61] backdrop-blur-md">
+    // CHANGED: border-[#2A0E61] -> border-[#047857] (Emerald Green)
+    <div className="w-full bg-transparent text-gray-200 shadow-lg p-[15px] relative z-50 border-t border-[#047857] backdrop-blur-md">
         
         {/* Container */}
         <div className="max-w-7xl mx-auto flex flex-col items-center justify-center px-4 py-8">
@@ -17,7 +18,8 @@ const Footer = () => {
                 
                 {/* Column 1: Brand Identity */}
                 <div className="flex flex-col items-center md:items-start text-center md:text-left">
-                    <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-4">
+                    {/* CHANGED: Gradient from Purple -> Green/Emerald */}
+                    <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-cyan-500 mb-4">
                         TeachToTech
                     </h3>
                     <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
@@ -32,17 +34,18 @@ const Footer = () => {
                     </h4>
                     <ul className="flex flex-col gap-4 text-sm">
                         <li>
-                            <a href="#" className="hover:text-cyan-400 transition-colors duration-200">
+                            {/* CHANGED: Hover color to Emerald/Green */}
+                            <a href="#" className="hover:text-emerald-400 transition-colors duration-200">
                                 Become a Sponsor
                             </a>
                         </li>
                         <li>
-                            <a href="#about" className="hover:text-cyan-400 transition-colors duration-200">
+                            <a href="#about" className="hover:text-emerald-400 transition-colors duration-200">
                                 About Us
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:xyz123@gmail.com" className="hover:text-cyan-400 transition-colors duration-200">
+                            <a href="mailto:xyz123@gmail.com" className="hover:text-emerald-400 transition-colors duration-200">
                                 Contact Support
                             </a>
                         </li>
@@ -55,15 +58,15 @@ const Footer = () => {
                         Connect
                     </h4>
                     <div className="flex flex-col gap-4 text-sm">
-                        <a href="#" className="flex items-center gap-2 hover:text-cyan-400 transition-colors duration-200 group">
+                        <a href="https://www.instagram.com/teachtotech_edtech?igsh=eXY4NzBwaXgxdG8y" className="flex items-center gap-2 hover:text-emerald-400 transition-colors duration-200 group">
                             <RxInstagramLogo className="text-lg group-hover:scale-110 transition-transform" />
                             <span>Instagram</span>    
                         </a>
-                        <a href="#" className="flex items-center gap-2 hover:text-cyan-400 transition-colors duration-200 group">
+                        {/* <a href="#" className="flex items-center gap-2 hover:text-emerald-400 transition-colors duration-200 group">
                             <RxTwitterLogo className="text-lg group-hover:scale-110 transition-transform" />
                             <span>Twitter</span>    
-                        </a>
-                        <a href="#" className="flex items-center gap-2 hover:text-cyan-400 transition-colors duration-200 group">
+                        </a> */}
+                        <a href="https://www.linkedin.com/company/teachtotech/" className="flex items-center gap-2 hover:text-emerald-400 transition-colors duration-200 group">
                             <RxLinkedinLogo className="text-lg group-hover:scale-110 transition-transform" />
                             <span>Linkedin</span>    
                         </a>
@@ -72,7 +75,8 @@ const Footer = () => {
             </div>
 
             {/* Bottom Bar: Copyright */}
-            <div className="w-full border-t border-[#2A0E61] pt-6 flex flex-col md:flex-row items-center justify-between text-gray-500 text-sm">
+            {/* CHANGED: Border color to Emerald */}
+            <div className="w-full border-t border-[#047857] pt-6 flex flex-col md:flex-row items-center justify-between text-gray-500 text-sm">
                 <div className="text-center md:text-left mb-2 md:mb-0">
                     &copy; {new Date().getFullYear()} TeachToTech. All rights reserved.
                 </div>

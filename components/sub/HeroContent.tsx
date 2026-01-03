@@ -20,9 +20,11 @@ const HeroContent = () => {
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
+          // CHANGED: Border color to Greenish (#00ff9d with opacity)
+          className="Welcome-box py-[8px] px-[7px] border border-[#00ff9d8b] opacity-[0.9]"
         >
-          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
+          {/* CHANGED: Icon text color to bright green */}
+          <SparklesIcon className="text-[#00ff9d] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
             Delivering Industry-Ready Training
           </h1>
@@ -34,7 +36,8 @@ const HeroContent = () => {
         >
           <span>
             Providing
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            {/* CHANGED: Gradient from Purple to Green/Emerald */}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">
               {" "}
               the best{" "}
             </span>
@@ -49,9 +52,12 @@ const HeroContent = () => {
           At TeachToTech, we are committed to delivering industry-relevant training 
           that bridges the gap between academic learning and real-world technology
         </motion.p>
+        
         <motion.a
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          // CHANGED: Replaced 'button-primary' with explicit green styling
+          // If you prefer to keep 'button-primary', go to your globals.css and change the background there.
+          className="py-2 bg-emerald-600 hover:bg-emerald-500 transition-colors text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
           Learn More!
         </motion.a>
